@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <py-env>
+            - numpy
+            - matplotlib
+            - paths:
+                - ./plot_demo.py
+        </py-env>
+    </head>
+    <body>
+        <p>The time is <span id="time"> </span></p>
+        <p>Below is a sin plot.</p>
+        <div id="plot"></div>
+        <py-script src="./main.py"></py-script>
+        <py-repl auto-generate="true"></py-repl>
+    </body>
+</html>
